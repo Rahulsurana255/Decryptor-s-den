@@ -1,0 +1,47 @@
+body {
+    font-family: 'Courier New', monospace;
+    background-color: #222;
+    color: #fff;
+}
+
+.container {
+    max-width: 800px;
+    margin: 0 auto;
+    padding: 20px;
+    background-color: #333;
+    border-radius: 10px;
+}
+
+form {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 10px;
+}
+
+input, select, button {
+    padding: 5px;
+    border: 1px solid #fff;
+    border-radius: 5px;
+    background-color: #444;
+    color: #fff;
+}
+
+button {
+    grid-column: span 2;
+    cursor: pointer;
+}
+
+#decryption-progress {
+    margin-top: 20px;
+    height: 20px;
+    background-color: #555;
+    border-radius: 5px;
+}
+
+#decrypted-message {
+    margin-top: 20px;
+}
+
+#cryptic-artefacts {
+    margin-top: 20px;
+}

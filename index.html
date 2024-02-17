@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Den</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <div class="container">
+        <h1>Welcome to the Den</h1>
+        <form id="encrypt-form">
+            <label for="message">Message:</label>
+            <input type="text" id="message" name="message" required>
+            <label for="algorithm">Algorithm:</label>
+            <select id="algorithm" name="algorithm">
+                <option value="shor">Shor's Algorithm</option>
+                <option value="grover">Grover's Algorithm</option>
+            </select>
+            <button type="submit">Encrypt</button>
+        </form>
+        <div id="decryption-progress"></div>
+        <div id="decrypted-message"></div>
+        <div id="cryptic-artefacts"></div>
+    </div>
+    <script src="scripts.js"></script>
+</body>
+</html>
